@@ -39,12 +39,10 @@ class Beli extends Shell {
     }
 
     public function cetakPembelian() {
-        echo "<center>";
-        echo "--------------------------------------<br>";
+        echo "<div class='mt-3 alert alert-primary'>";
         echo "Anda membeli bahan bakar tipe : " . "<b>" . $this->jenis . "</b>" . "<br>";
         echo "Dengan jumlah : " . "<b>" . $this->jumlah . " Liter </b><br>";
         echo "Total yang harus anda bayar <b> Rp. " .  number_format($this->hargaBeli(), 0, '', '.') . "</b><br>";
-        echo "--------------------------------------<br>";
-        echo "</center>";
+        echo "</div>";
     }
 }
